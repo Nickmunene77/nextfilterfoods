@@ -1,13 +1,14 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Button } from './components/ui/button'
+import '../app/globals.css'
+import Homepage from './pages/home-page'
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Button variant={'ghost'} className="text-3xl bg-teal-700">
-        Button
-      </Button>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
     </>
   )
 }
